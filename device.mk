@@ -111,8 +111,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libtinycompress \
-    libvolumelistener \
-    tinymix
+    libvolumelistener
 
 PRODUCT_PACKAGES += \
     libbatterylistener \
