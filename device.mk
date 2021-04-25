@@ -321,6 +321,10 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.realme_sdm660-libperfmgr
