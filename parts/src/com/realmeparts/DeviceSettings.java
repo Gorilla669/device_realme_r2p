@@ -42,7 +42,6 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_GAME_SWITCH = "game";
     public static final String KEY_DND_SWITCH = "dnd";
     public static final String KEY_FPS_INFO = "fps_info";
-    public static final String TP_LIMIT_ENABLE = "/proc/touchpanel/oppo_tp_limit_enable";
     public static final String TP_DIRECTION = "/proc/touchpanel/oppo_tp_direction";
     private static NotificationManager mNotificationManager;
     public TwoStatePreference mDNDSwitch;
