@@ -373,7 +373,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_RMX1801
+    librecovery_updater_r2p
 
 # Seccomp
 PRODUCT_COPY_FILES += \
