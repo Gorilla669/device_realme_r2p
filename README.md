@@ -1,7 +1,7 @@
 Device Tree for Realme 2 Pro
 ===========================================
 
-The Realme 2 Pro (codenamed _"RMX1801"_) is a mid-range smartphone from Realme.
+The Realme 2 Pro (codenamed _"r2p"_) is a mid-range smartphone from Realme.
 It was announced in September 2018
 
 ## Device specifications

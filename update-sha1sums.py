@@ -20,7 +20,7 @@ import os
 import sys
 from hashlib import sha1
 
-device = 'RMX1801'
+device = 'r2p'
 vendor = 'realme'
 
 with open('proprietary-files.txt', 'r') as f:

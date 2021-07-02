@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX1801
+DEVICE_PATH := device/realme/r2p
 
 ## TMP
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
@@ -35,14 +35,10 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := sdm660
-# TARGET_BOARD_PLATFORM_GPU := qcom-adreno512
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
-
-# 64-bits binder
-# TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 loop.max_part=7
@@ -65,7 +61,7 @@ TARGET_KERNEL_CONFIG := RMX1801_defconfig
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX1801
+TARGET_OTA_ASSERT_DEVICE := r2p,RMX1801
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -80,7 +76,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 QCOM_BT_USE_BTNV := true
-#TARGET_USE_QTI_BT_STACK := true
 BUILD_BROKEN_DUP_RULES := true
 
 # Camera
@@ -146,9 +141,6 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Power
-# TARGET_USES_INTERACTION_BOOST := true
-
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
@@ -199,4 +191,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/realme/RMX1801/BoardConfigVendor.mk
+-include vendor/realme/r2p/BoardConfigVendor.mk

@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common AwakenOS stuff
 $(call inherit-product, vendor/awaken/config/common.mk)
 
-# Inherit from Realme RMX1801
-$(call inherit-product, device/realme/RMX1801/device.mk)
+# Inherit from Realme r2p
+$(call inherit-product, device/realme/r2p/device.mk)
 
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-PRODUCT_NAME := awaken_RMX1801
-PRODUCT_DEVICE := RMX1801
+PRODUCT_NAME := awaken_r2p
+PRODUCT_DEVICE := r2p
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := oppo
 PRODUCT_MODEL := Realme 2 Pro
@@ -36,11 +36,11 @@ PRODUCT_ARCH := arm64
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-TARGET_VENDOR_PRODUCT_NAME := RMX1801
-TARGET_VENDOR_DEVICE_NAME := RMX1801
+TARGET_VENDOR_PRODUCT_NAME := r2p
+TARGET_VENDOR_DEVICE_NAME := r2p
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="RMX1801" \
+    PRODUCT_NAME="r2p" \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210605.005 7349499 release-keys"
 
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys"

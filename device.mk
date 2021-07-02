@@ -15,7 +15,7 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/realme/RMX1801/RMX1801-vendor.mk)
+$(call inherit-product, vendor/realme/r2p/r2p-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -36,7 +36,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/realme/RMX1801
+PRODUCT_SOONG_NAMESPACES += device/realme/r2p
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := RMX1801
+TARGET_OTA_ASSERT_DEVICE := r2p,RMX1801
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
