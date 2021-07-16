@@ -6,6 +6,12 @@
     "branch"     : "eas3"
   },
   {
+    "repository" : "android_packages_apps_RealmeDirac",
+    "target_path": "packages/apps/RealmeDirac",
+    "remote"     : "github",
+    "branch"     : "master"
+  },
+  {
     "repository" : "vendor_realme_r2p",
     "target_path": "vendor/realme/r2p"
   }
