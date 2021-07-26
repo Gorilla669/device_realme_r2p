@@ -325,6 +325,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RealmeParts
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/parts/init/realmeparts.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/realmeparts.rc
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.realme_sdm660-libperfmgr
