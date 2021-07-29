@@ -18,8 +18,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AwakenOS stuff
-$(call inherit-product, vendor/awaken/config/common.mk)
+# Inherit some common WaveOS stuff
+$(call inherit-product, vendor/wave/configs/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from Realme r2p
 $(call inherit-product, device/realme/r2p/device.mk)
@@ -27,7 +28,7 @@ $(call inherit-product, device/realme/r2p/device.mk)
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-PRODUCT_NAME := awaken_r2p
+PRODUCT_NAME := wave_r2p
 PRODUCT_DEVICE := r2p
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := oppo

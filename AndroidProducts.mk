@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_r2p.mk
+    $(LOCAL_DIR)/wave_r2p.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_r2p-user \
-    awaken_r2p-userdebug \
-    awaken_r2p-eng
+    wave_r2p-user \
+    wave_r2p-userdebug \
+    wave_r2p-eng
