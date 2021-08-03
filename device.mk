@@ -395,7 +395,6 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
     ims-ext-common \
     ims_ext_common.xml \
     telephony-ext
