@@ -1,3 +1,7 @@
+type hal_keymaster_qti_exec, fs_type, dev_type, file_type;
+type modem_efs_partition_device, fs_type, dev_type, file_type;
+type qti_init_shell;
+type firmware_file, fs_type, dev_type, file_type;
 type sysfs_usb_supply;
 type display_vendor_data_file;
 type persist_block_device;
@@ -12,9 +16,7 @@ type vendor_radio_prop;
 type vendor_qcom_ims_prop;
 type cnd;
 type hal_datafactory_hwservice;
-type qti_init_shell;
-type firmware_file;
-type bt_firmware_file;
+type bt_firmware_file, fs_type, dev_type, file_type;
 type mm-pp-daemon;
 type wifi_vendor_data_file;
 type sysfs_kgsl;
@@ -47,7 +49,7 @@ type hal_bluetooth_qti;
 type sysfs_graphics;
 type vendor_video_prop;
 type hal_display_color_default;
-type sysfs_battery_supply;
+type sysfs_battery_supply, fs_type, dev_type, file_type;
 
 # FPS Info
 type sysfs_fps, sysfs_type, fs_type;
